@@ -6,7 +6,7 @@
 /*   By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/02 15:54:53 by nlewicki          #+#    #+#             */
-/*   Updated: 2024/12/04 11:41:00 by nlewicki         ###   ########.fr       */
+/*   Updated: 2024/12/04 14:04:14 by nlewicki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,4 +95,39 @@ void ClapTrap::beRepaired(unsigned int amount)
 	}
 	else
 		std::cout << "ClapTrap " << this->name << " is out of energy!" << std::endl;
+}
+
+void ClapTrap::setHitPoints(unsigned int hitPoints)
+{
+	this->hitPoints = hitPoints;
+}
+
+void ClapTrap::setEnergyPoints(unsigned int energyPoints)
+{
+	this->energyPoints = energyPoints;
+}
+
+void ClapTrap::setAttackDamage(unsigned int attackDamage)
+{
+	this->attackDamage = attackDamage;
+}
+
+std::string ClapTrap::getName(void) const
+{
+	return this->name;
+}
+
+int ClapTrap::getHitPoints(void) const
+{
+	return this->hitPoints;
+}
+
+int ClapTrap::getEnergyPoints(void) const
+{
+	return this->energyPoints;
+}
+
+int ClapTrap::getAttackDamage(void) const
+{
+	return this->attackDamage;
 }

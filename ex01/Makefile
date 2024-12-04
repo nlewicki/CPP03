@@ -5,18 +5,19 @@
 #                                                     +:+ +:+         +:+      #
 #    By: nlewicki <nlewicki@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/12/02 15:54:06 by nlewicki          #+#    #+#              #
-#    Updated: 2024/12/04 11:29:51 by nlewicki         ###   ########.fr        #
+#    Created: 2024/12/03 12:46:13 by nlewicki          #+#    #+#              #
+#    Updated: 2024/12/04 11:32:01 by nlewicki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CPP = c++
 FLAGS = -Wall -Wextra -Werror -std=c++17
 
-NAME = ClapTrap
+NAME = serena
 
 SRCS = main.cpp \
 		ClapTrap.cpp \
+		ScavTrap.cpp \
 
 OBJS = $(SRCS:.cpp=.o)
 
